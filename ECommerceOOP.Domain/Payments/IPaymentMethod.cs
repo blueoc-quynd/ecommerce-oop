@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ECommerceOOP.ECommerceOOP.Domain.Payments;
 
-namespace ECommerceOOP.ECommerceOOP.Domain.Payments
+// Abstraction: định nghĩa hành vi thanh toán, không quan tâm chi tiết bên trong
+public interface IPaymentMethod
 {
-    internal interface IPaymentMethod
-    {
-    }
+    void Pay(decimal amount);
 }

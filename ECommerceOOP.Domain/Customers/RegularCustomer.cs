@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ECommerceOOP.ECommerceOOP.Domain.Customers;
 
-namespace ECommerceOOP.ECommerceOOP.Domain.Customers
+// Khách hàng thường: không có discount (0%)
+public class RegularCustomer(string name) : Customer(name)
 {
-    internal class RegularCustomer
-    {
-    }
+    public override decimal GetDiscount() => 0m;
 }
