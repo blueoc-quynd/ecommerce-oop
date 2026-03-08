@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ECommerceOOP.ECommerceOOP.Domain.Customers;
 
-namespace ECommerceOOP.ECommerceOOP.Domain.Customers
+// Khách VIP: discount 20%
+public class VipCustomer(string name) : Customer(name)
 {
-    internal class VipCustomer
-    {
-    }
+    public override decimal GetDiscount() => 0.20m;
 }
